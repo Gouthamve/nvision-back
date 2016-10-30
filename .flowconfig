@@ -1,0 +1,9 @@
+[ignore]
+.*/node_modules/react-color/.*
+.*/node_modules/reactcss/.*
+
+[include]
+
+[libs]
+
+[options]

@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "The experimental backend for nvision",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.2",
+    "keystone": "next"
+  },
+  "scripts": {
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "start": "flow-node web.js"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.33.0"
+  }
+}
