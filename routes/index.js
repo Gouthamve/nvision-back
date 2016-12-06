@@ -27,4 +27,3 @@ exports = module.exports = function(app) {
   app.get('/domains/:domain/events', routes.domains.getEventsOfDomain);
   app.get('/domains/:domain/events/:event', routes.domains.getEvent);
 };
->>>>>>> 6d37d576d722660bd77ac7a88bdd377620bb6fea
