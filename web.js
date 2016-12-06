@@ -22,4 +22,6 @@ keystone.init({
 require('./models');
 keystone.set('routes', require('./routes'));
 
+keystone.set('routes', require('./routes'))
+
 keystone.start();
