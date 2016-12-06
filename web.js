@@ -1,6 +1,7 @@
 /* @flow */
 
-let keystone = require('keystone');
+const keystone = require('keystone');
+const cons = require('consolidate');
 
 keystone.init({
   'name': 'nvision 2017',
@@ -11,10 +12,14 @@ keystone.init({
   'session': true,
   'auth': true,
   'user model': 'User',
-  'cookie secret': 'This is a Huuge Secret'
+  'cookie secret': 'This is a Huuge Secret',
+  'views': 'templates/views',
+  'custom engine': cons.handlebars,
+  'view engine': 'html'
 });
 
 
 require('./models');
+keystone.set('routes', require('./routes'));
 
 keystone.start();
